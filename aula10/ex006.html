@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Curso em Vídeo - Aula 10</title>
+    <style>
+        div#area {
+            font: normal 20px Arial;
+            background: green;
+            color: white;
+            width: 200px;
+            height: 200px;
+            line-height: 200px;
+            text-align: center;
+        }
+    </style>
+
+</head>
+
+<body>
+
+    <!-- onclick="clicar()" onmouseenter="entrar()" onmouseout="sair()" -->
+    <div id="area" >
+        Interaja...
+    </div>
+
+    <script>
+
+        var area = window.document.getElementById('area');
+        area.addEventListener('click', clicar)
+        area.addEventListener('mouseenter', entrar)
+        area.addEventListener('mouseout', sair)
+
+        function clicar() {
+            if (area.innerText == 'Interaja...') {
+                area.innerText = 'Clicou';
+                area.style.background = 'blue'
+            } else {
+                area.innerText = 'Interaja...';
+                area.style.background = 'green'
+            }
+        }
+
+        function entrar() {
+            area.style.background = 'red'
+            area.innerText = 'Entrou!';
+        
+        }
+
+        function sair() {
+            area.style.background = 'green'
+            area.innerText = 'Saiu!';
+        }
+
+    </script>
+</body>
+
+</html>

@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Curso em Vídeo - Aula 12</title>
+    <link rel="stylesheet" href="estilo.css">
+</head>
+
+<body>
+    <header>
+        <h1>Verificador de idade</h1>
+    </header>
+
+    <section>
+        <div id="divAno">
+            Ano de Nascimento: <input type="number" id="anoNasc">
+            
+        </div>
+        <div id="sexoOpcoes">
+            Sexo:
+            <input type="radio" id="Masc" name="sexo" value="Masc">
+            <label for="masc">Masculino</label><br>
+            <input type="radio" id="Fem" name="sexo" value="Fem">
+            <label for="fem">Feminino</label><br>
+        </div>
+
+        <div id="buttonVerificar">
+            <input type="button" value="Verificar" onclick="verificar()">
+        </div>
+
+        <div id="resp">
+        </div>
+
+        <div id="imgRes">
+            <img/>
+        </div>
+    </section>
+
+    <footer>
+        <p>&copy; Guilherme Lima</p>
+    </footer>
+    <script src="script.js"></script>
+</body>
+
+</html>
